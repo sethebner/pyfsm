@@ -1,5 +1,6 @@
 [terminals] :: {a b c}
 [input] :: aaaabaaacababab
+
 [-START] :: false
 [q1] :: true
 
