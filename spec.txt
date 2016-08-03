@@ -1,0 +1,8 @@
+[terminals] :: {a b c}
+[input] :: aaaabaaacababab
+[-START] :: false
+[q1] :: true
+
+START -> START :: {a}
+START -> q1 :: {b}
+q1 -> q1 :: {a b c}
