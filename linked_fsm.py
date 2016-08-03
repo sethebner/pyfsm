@@ -56,12 +56,10 @@ class Linked_FSM(object):
         for state in self.inhabited_states:
             if char in state.get_transitions().keys():
                 for next_state in state.get_next(char):
-#                    print('{} takes {} to {}'.format(char, state.get_identifier(), next_state.get_identifier()))
                     destinations.add(next_state)
 
             if '\0' in state.get_transitions().keys():
                 for next_state in state.get_next('\0'):
-#                    print('\0 takes {} to {}'.format(state.get_identifier(), next_state.get_identifier()))
                     destinations.add(next_state)
 
         self.inhabited_states = destinations
